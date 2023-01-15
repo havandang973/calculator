@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 445px;
+    background-color: antiquewhite;
+    border: 1px solid #307CF9;
+}
+
+.screen {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    padding: 20px 20px 0px;
+}
+
+.screen-content {
+    position: relative;
+    border: 1px solid rgb(179, 178, 178);
+    width: 100%;
+    height: 100%; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: rgb(36, 36, 36);
+}
+
+.show {
+    position: absolute;
+    max-width: 95%;
+    bottom: 0;
+    right: 5px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.keyboard {
+    background-color: white;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column button {
+    width: 90px;
+    height: 60px;
+    font-size: 25px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+#plus , #minus, #multiplied,  #divided {
+    background-color: #ddd;
+}
+
+#equal {
+    background-color: #4d90fe;
+    border: 1px solid #3079ED;
+}
+#equal:hover {
+    background-color: #307CF9;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 10%);
+    border-color: #bbb;
+}
